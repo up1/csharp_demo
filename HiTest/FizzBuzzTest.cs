@@ -55,9 +55,15 @@ namespace HiTest
 		[Test]
 		public void Three ()
 		{
-			//FizzBuzz fizzBuzz = new FizzBuzz ();
 			String expectedResult = fizzBuzz.say (3);
 			Assert.AreEqual (expectedResult, "3");
+		}
+
+		[Test]
+		public void Four ()
+		{
+			String expectedResult = fizzBuzz.say (4);
+			Assert.AreEqual (expectedResult, "4");
 		}
 
 		[Test]
