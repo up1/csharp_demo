@@ -57,7 +57,7 @@ namespace HiTest
 		{
 			//FizzBuzz fizzBuzz = new FizzBuzz ();
 			String expectedResult = fizzBuzz.say (3);
-			Assert.AreEqual (expectedResult, "Fizz");
+			Assert.AreEqual (expectedResult, "3");
 		}
 
 		[Test]
