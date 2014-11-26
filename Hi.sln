@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hi", "Hi/Hi.csproj", "{AEF23DC6-D91A-4AA4-98FC-7AF41E2593D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiTest", "HiTest/HiTest.csproj", "{FA0DB9A7-24DA-47FC-8C44-04F8526CD910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF23DC6-D91A-4AA4-98FC-7AF41E2593D9}.Debug|x86.ActiveCfg = Debug|x86
+		{AEF23DC6-D91A-4AA4-98FC-7AF41E2593D9}.Debug|x86.Build.0 = Debug|x86
+		{AEF23DC6-D91A-4AA4-98FC-7AF41E2593D9}.Release|x86.ActiveCfg = Release|x86
+		{AEF23DC6-D91A-4AA4-98FC-7AF41E2593D9}.Release|x86.Build.0 = Release|x86
+		{FA0DB9A7-24DA-47FC-8C44-04F8526CD910}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA0DB9A7-24DA-47FC-8C44-04F8526CD910}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA0DB9A7-24DA-47FC-8C44-04F8526CD910}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA0DB9A7-24DA-47FC-8C44-04F8526CD910}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Hi/Hi.csproj
+	EndGlobalSection
+EndGlobal
