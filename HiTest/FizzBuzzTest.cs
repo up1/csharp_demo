@@ -53,6 +53,14 @@ namespace HiTest
 		}
 
 		[Test]
+		public void Three ()
+		{
+			//FizzBuzz fizzBuzz = new FizzBuzz ();
+			String expectedResult = fizzBuzz.say (3);
+			Assert.AreEqual (expectedResult, "Fizz");
+		}
+
+		[Test]
 		[ExpectedException(typeof(MyException), ExpectedMessage="Number invalid") ]
 		public void invalid_number_throw_exception ()
 		{
