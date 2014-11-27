@@ -72,5 +72,12 @@ namespace HiTest
 		{
 			fizzBuzz.say (0);
 		}
+
+		[Test]
+		[ExpectedException("Hi.MyException") ]
+		public void invalid_number_throw_exception2 ()
+		{
+			fizzBuzz.say (0);
+		}
 	}
 }
