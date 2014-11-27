@@ -1,0 +1,4 @@
+﻿txt
+TXT
+pdf
+PDF
