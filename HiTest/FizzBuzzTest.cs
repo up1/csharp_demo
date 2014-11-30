@@ -56,7 +56,7 @@ namespace HiTest
 		public void Three ()
 		{
 			String expectedResult = fizzBuzz.say (3);
-			Assert.AreEqual (expectedResult, "3");
+			Assert.AreEqual (expectedResult, "Fizz");
 		}
 
 		[Test]
@@ -78,6 +78,20 @@ namespace HiTest
 		public void invalid_number_throw_exception2 ()
 		{
 			fizzBuzz.say (0);
+		}
+
+		[TestCase(1,"1")]
+		[TestCase(2,"2")]
+		[TestCase(3,"Fizz")]
+		public void fizzBuzzXX(int input, String expectedResult) {
+			Assert.AreEqual (expectedResult, fizzBuzz.say (input));
+		}
+
+		[TestCase(1, Result="1")]
+		[TestCase(2, Result="2")]
+		[TestCase(3, Result="Fizz")]
+		public string fizzBuzzYY(int input) {
+			return fizzBuzz.say (input);
 		}
 	}
 }

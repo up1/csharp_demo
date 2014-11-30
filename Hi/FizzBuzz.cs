@@ -8,6 +8,9 @@ namespace Hi
 			if (number <= 0) {
 				throw new MyException ("Number invalid");
 			}
+			if (number == 3) {
+				return "Fizz";
+			}
 			return number.ToString();
 		}
 			
