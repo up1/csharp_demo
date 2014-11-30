@@ -7,14 +7,10 @@ namespace Hi
 	public class LogAnalyzer
 	{
 
-		private ExtensionInterface extention;
+		public ExtensionInterface extention { set; get;}
 
 		public LogAnalyzer() {
 			this.extention = new FileExtension ();
-		}
-
-		public LogAnalyzer(ExtensionInterface extension) {
-			this.extention = extension;
 		}
 
 		public bool isValidFileName(String filename) {
