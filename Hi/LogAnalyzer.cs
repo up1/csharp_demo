@@ -6,26 +6,19 @@ namespace Hi
 {
 	public class LogAnalyzer
 	{
-		private ArrayList extensions = new ArrayList ();
-		public LogAnalyzer ()
-		{
-			string line;
-			StreamReader file = new StreamReader("/Users/somkiat/Projects/Hi/Hi/extension.txt");
-			while( (line = file.ReadLine())  != null) {
-				if(!String.IsNullOrEmpty(line)) {
-					extensions.Add (line);
-				}
-			}
-			file.Close ();
+
+		private ExtensionInterface extention;
+
+		public LogAnalyzer() {
+			this.extention = new FileExtension ();
+		}
+
+		public LogAnalyzer(ExtensionInterface extension) {
+			this.extention = extension;
 		}
 
 		public bool isValidFileName(String filename) {
-			foreach(String extension in extensions) {
-				if(filename.EndsWith(extension)) {
-					return true;
-				}
-			}
-			return false;
+			return this.extention.isValid (filename);
 		}
 	}
 }
